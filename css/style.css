@@ -1,0 +1,313 @@
+body {
+	background: #f1f1f1 none;
+	color: #162751;
+	font-family: "Roboto", Times, sans-serif;
+}
+
+.c-main {
+	text-align: center;
+	margin: 0;
+	font-weight: 500;
+	font-size: 1.5rem;
+  padding-top: 15rem;
+}
+
+.l-main {
+	min-width: 20rem;
+	max-width: 100rem;
+	margin : 0 auto;
+	padding: 0 2rem;
+}
+
+.c-soustitre {
+	padding-bottom: 3;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	color: #61b3e3;
+}
+
+.c-titre {
+	width: 100%;
+	max-width: 40rem;
+	font-size: 3rem;
+	position: relative;
+	margin: .2rem auto 0 auto;
+}
+
+.c-titre:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 6rem;
+    height: .3rem;
+    background-color: #61b3e3;
+    transform: translateX(-50%);
+}
+
+.c-textechamp {
+  width: 100%;
+  max-width: 60rem;
+  font-weight: 200;
+	font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+.i-corps {
+	max-width: 60%;
+	width: auto;
+	height: auto;
+	vertical-align: top;
+}
+
+.i-logo {
+  width: 27%;
+  height: 27%;
+}
+
+.c-epingle {
+  padding: 5rem 0;
+}
+
+.c-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-epingle {
+  width: 5%;
+}
+
+.c-soustitre2 {
+  flex: initial;
+  font-size: 3rem;
+}
+
+@media (max-width: 45em) {
+	.c-titre, .c-soustitre2 {
+		font-size: 2rem;
+	}
+	.c-soustitre, .c-textechamp {
+		font-size: 1.2rem;
+	}
+}
+
+.svgIcone {
+    /* Position figée, indépendant du 
+       défilement de la page */
+    position: fixed;
+    top: 20px;
+    right: 30px;
+  
+    /* Taille fixe */
+    height: 32px;
+    width: 32px;
+  }
+
+a {
+    color: #FFFF;
+    font-size: 32px;
+    text-decoration: none;
+  }
+
+
+  /* Retirer les pastilles avant les items des listes */
+ul {
+    list-style: none;
+  }
+  /* Associe les mêmes règles au label et à la case
+   pour les superposer, et "cacher" la case à cocher. */
+
+.menu-label,
+.menu-cb {
+  cursor: pointer;
+  appearance: none;
+  position: fixed;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  right: 30px;
+  z-index: 4;
+}
+
+  /* SI la case est cochée, modifier la classe "menu-nav" */
+.menu-cb:checked ~ .menu-nav {
+    display: block;
+  }
+
+  .menu-label,
+.menu-cb {
+  /* [...] */
+  z-index: 10;
+}
+
+.menu-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 90%;
+	max-width: 400px;
+  padding-top: 200px;
+  text-align: left;
+  background: #061A8B;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: transform 0.5s linear;
+}
+
+.svgRectangle{
+    color: #FFFF;
+    position: fixed;
+    top: 600px;
+    right: 0px;
+  
+    /* Taille fixe */
+    height: 15px;
+    width: 600px;
+}
+.svgRectangle2{
+    color: #FFFF;
+    position: fixed;
+    top: 700px;
+    right: 0px;
+  
+    /* Taille fixe */
+    height: 15px;
+    width: 600px;
+}
+
+.IconeReseau{
+    color: #FFFF;
+    position:fixed;
+    top:600px;
+    right:0px;
+
+    height:100px;
+    width:400px;
+}
+
+.menu-nav2{
+    position: fixed;
+	top: 0;
+	right: 0;
+	height: 100px;
+	width: 90%;
+	max-width: 400px;
+  padding-top: 0px;
+  background: #0B1341;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: transform 0.5s linear;
+}
+
+.menu-nav3{
+    position: fixed;
+	top: 0;
+	right: 0;
+	height: 100px;
+	width: 90%;
+	max-width: 400px;
+    padding-top: 0px;
+    padding-top: 00px;
+    background: #FFFF;
+    transform: translateX(100%);
+    transition: transform 0.5s linear;
+
+}
+
+.menu-item {
+    /* Ligne entre les noms des menus */
+    padding: 1.5em 40px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .menu-cb:checked ~ .menu-nav, .menu-cb:checked ~.menu-nav2{
+    /* On fait défiler l'élément jusqu'à la position voulue */
+    transform: translateX(0);
+    transition: transform 0.5s linear;
+}
+
+.video-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%; 
+  position:relative;
+  height:0;
+  
+ }
+ .video-responsive iframe {
+  left:50px;
+  top:400px;
+  height:100%;
+  width:100%;
+  position:absolute;
+ }
+
+.video0{
+  position: absolute; /* Par défaut, l'élément est dans le flux normal */
+  top: 50%; /* Décalage de 10px vers le bas */
+  left: 10%; /* Décalage de 15px vers la droite */
+  padding:0 0 0 0px;
+  z-index: 15;
+}
+.video1 {
+  padding: 0 50px 0 100px;
+}
+.video2 {
+  padding:0 100px 0 50px ;
+
+}
+
+.head_stick{
+  position: fixed;
+  background-color:#080e1e;
+  padding: 20px;
+  margin: 15 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.logo
+{
+  padding-left: 10%;
+}
+button{
+  text-align: right;
+}
+
+p
+{
+  height: 1500px;
+}
+
+.text{
+  position: relative; /* Par défaut, l'élément est dans le flux normal */
+  top: 200px; /* Décalage de 10px vers le bas */
+  left: 0px; /* Décalage de 15px vers la droite */
+  text-align: center;
+  color: #162751;
+  font-size:64px;
+  z-index: 2;
+}
+
+.text1{
+  position: relative; /* Par défaut, l'élément est dans le flux normal */
+  top: 675px; /* Décalage de 10px vers le bas */
+  left: 260px; /* Décalage de 15px vers la droite */
+  text-align: left;
+  color: #162751;
+  font-size:64px;
+  z-index: 9999;
+}
+
+.text2{
+  position: relative; /* Par défaut, l'élément est dans le flux normal */
+  top: 600px; /* Décalage de 10px vers le bas */
+  right: 260px; /* Décalage de 15px vers la droite */
+  text-align: right;
+  color: #162751;
+  font-size:64px;
+
+}

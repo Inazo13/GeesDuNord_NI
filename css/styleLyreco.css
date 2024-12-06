@@ -1,0 +1,35 @@
+  .animation_du_logo {
+    position: absolute;
+    width: 20vw;  /*  */
+    height: 20vh; /*le logo fait 20% de la fenetre de large et de hauteur*/
+    overflow: hidden;
+    pointer-events: auto;  /*pointer avec la souris active le reste */
+  }
+  
+  /* Image statique */
+  .animation_du_logo .static-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Pour ajuster l'image à la taille sans la couper */
+    transition: opacity 0s; /* Pas de transition pour l'image, elle devient invisible instantanément */
+  }
+  /*animation*/
+  .animation_du_logo .animated-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain; /*modifie la taille du GIF sans le couper*/
+    opacity: 0;  /* d abord invisible  */
+    transition: opacity 0s; /*transition instantané */
+  }
+  
+  /* Lorsque la souris passe dessus, l'animation commence */
+  .animation_du_logo:hover .static-img {
+    opacity: 0;
+  }
+  .animation_du_logo:hover .animated-img {
+    opacity: 1;  /* L animation devient visible */
+  }
+  
