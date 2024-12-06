@@ -28,7 +28,7 @@ Page interactive qui permet aux utilisateurs de mieux comprendre l’importance 
 
 Page sur laquelle les utilisateurs peuvent visualiser les deux premiers épisodes du podcast, ainsi que d'écouter au début de chaque podcast le magnifique jingle concocté par nos soins sur fond du logo de Race For Water \!   
 	  
-	La page A propos :  
+##	La page A propos :  
 La page A propos apporte aux utilisateurs des renseignements sur les acteurs qui ont réalisé le site web, ainsi que des précisions sur les objectifs de ce projet.
 
 ## 	La page Lyreco :
